@@ -11,7 +11,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: "{{ .Values.destination.namespace }}"
   source:
-    path: bootstrap/applications
     repoURL: {{ .Values.global.source.repoURL }}
     targetRevision: {{ .Values.global.source.targetRevision }}
     helm:
