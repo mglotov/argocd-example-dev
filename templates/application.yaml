@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: "{{ .Values.destination.namespace }}"
+  namespace: argocd
+spec:
+  project: default
+  syncPolicy:
+    automated: {}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: "{{ .Values.destination.namespace }}"
+  source:
+    path: bootstrap/applications
+    repoURL: {{ .Values.global.source.repoURL }}
+    targetRevision: {{ .Values.global.source.targetRevision }}
+    helm:
+      valueFiles:
+        - values.yaml
+        - values.{{ .Values.destination.namespace }}.yaml

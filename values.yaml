@@ -1,0 +1,11 @@
+global:
+  source:
+    repoURL: https://github.com/mglotov/argocd-example-dev.git
+    targetRevision: master
+app1:
+  image:
+    repository: docker.io/mglotov/argocd-app1
+app2:
+  image:
+    repository: docker.io/mglotov/argocd-app2
+

@@ -1,0 +1,11 @@
+apiVersion: v2
+name: dev
+version: 0.1.0
+
+dependencies:
+  - name: app1
+    version: 0.1.0
+    repository: file://../argocd-example-charts/app1
+  - name: app2
+    version: 0.1.0
+    repository: file://../argocd-example-charts/app2
