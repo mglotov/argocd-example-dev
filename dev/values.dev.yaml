@@ -8,7 +8,7 @@ app1:
   enabled: true
   image:
     tag: fe61325d9261dfc5ada4ae6800be381224031d88
-  replicaCount: 7
+  replicaCount: 1
 app2:
   enabled: true
   image:
