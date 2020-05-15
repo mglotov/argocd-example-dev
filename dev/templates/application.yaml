@@ -13,7 +13,8 @@ spec:
   source:
     repoURL: {{ .Values.global.source.repoURL }}
     targetRevision: {{ .Values.global.source.targetRevision }}
+    path: {{ .Values.global.source.path }}
     helm:
       valueFiles:
-        - values.yaml
+        - ../values.yaml
         - values.{{ .Values.destination.namespace }}.yaml

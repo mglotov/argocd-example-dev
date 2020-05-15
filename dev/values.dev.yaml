@@ -3,6 +3,7 @@ destination:
 global:
   source:
     targetRevision: master
+    path: dev
 app1:
   enabled: true
   image:
