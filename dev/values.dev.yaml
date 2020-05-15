@@ -7,7 +7,7 @@ global:
 app1:
   enabled: true
   image:
-    tag: fe61325d9261dfc5ada4ae6800be381224031d88
+    tag: 93e7a1d1f6dcd0c7a84a07f1d2dd1e5b47bd3f85
   replicaCount: 1
 app2:
   enabled: true
